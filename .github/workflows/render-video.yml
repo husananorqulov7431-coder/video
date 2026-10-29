@@ -1,0 +1,74 @@
+name: Render Antigravity Masterclass Video
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+    inputs:
+      quality:
+        description: "Video sifati (1-100)"
+        required: false
+        default: "85"
+
+jobs:
+  build-and-render:
+    name: Build Audio & Render MP4 Video
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python Audio & TTS Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install edge-tts mutagen
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install FFmpeg & Media Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libasound2
+
+      - name: Install NPM Dependencies
+        run: |
+          npm install
+
+      - name: Generate Audio Narrations & Timing Manifest
+        run: |
+          mkdir -p public/audio audio out
+          python scripts/generate_tts.py
+
+      - name: Render Remotion Video (1080p 60fps)
+        run: |
+          npx remotion render AntigravityMasterclass out/Antigravity_Masterclass_Uzbek.mp4 --concurrency=2
+
+      - name: Upload Final Video Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Antigravity-Masterclass-Uzbek-1080p
+          path: out/Antigravity_Masterclass_Uzbek.mp4
+          retention-days: 30
+
+      - name: Upload Audio & Subtitle Package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Antigravity-Audio-Subtitles
+          path: |
+            public/audio/*.mp3
+            subtitles/*.srt
+            subtitles/*.json
+            audio/timing_manifest.json
+          retention-days: 30
