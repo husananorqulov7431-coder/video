@@ -1,0 +1,100 @@
+{
+  "title": "Google Antigravity To'liq Masterklassi — AI-Agentlar Bilan Dasturlash Inqilobi",
+  "language": "uz",
+  "resolution": "1080p",
+  "fps": 60,
+  "scenes": [
+    {
+      "id": "scene_01_intro",
+      "title": "Kirish: Agentic Coding Inqilobi",
+      "startTime": "00:00:00",
+      "endTime": "00:01:30",
+      "durationEst": 90,
+      "narration": "Assalomu alaykum! Dasturlash olamida navbatdagi ulkan inqilob sodir bo'ldi. Oxirgi bir necha yil davomida biz oddiy chat-botlar — ChatGPT, Claude yoki dastlabki yordamchilardan foydalanib keldik. Ammo ularning barchasida bitta katta muammo bor edi: ular passiv. Ular sizga kod yozib beradi, siz esa uni qo'lda nusxalab, fayllarga joylashingiz, xatolarni o'zingiz tekshirishingiz kerak edi. Bugun esa bu davr yakunlandi. Siz bilan Google DeepMind tomonidan yaratilgan eng ilg'or, to'liq avtonom dasturchi-sherik — Google Antigravity bilan tanishamiz. Antigravity — bu shunchaki chat emas. U fayllarni mustaqil o'qiydi, tahrirlaydi, terminalda buyruqlarni ishga tushiradi, testlarni bajaradi, xatolarni tuzatadi va eng muhimi — murakkab loyihalarni mustaqil rejalashtiradi. Ushbu darslikda biz Antigravity-ning arxitekturasi, uning 3 ta asosiy interfeysi, maxsus slash buyruqlari, subagentlar va kastomizatsiya tizimini to'liq ko'rib chiqamiz. Eng qizig'i — dars yakunida siz bilan birgalikda Antigravity uchun noldan o'zimizning shaxsiy Custom Skill-imizni yaratib, uni jonli amaliyotda sinab ko'ramiz!",
+      "visuals": {
+        "theme": "dark-cyber",
+        "headline": "GOOGLE ANTIGRAVITY",
+        "subheadline": "Avtonom AI-Agentlar Bilan Dasturlashning Yangi Davri",
+        "badges": ["DeepMind Engine", "Autonomous Agent", "Full IDE & CLI", "Custom Skills"]
+      }
+    },
+    {
+      "id": "scene_02_surfaces",
+      "title": "Antigravity-ning Uchta Asosiy Yuzi (Surfaces)",
+      "startTime": "00:01:30",
+      "endTime": "00:04:30",
+      "durationEst": 180,
+      "narration": "Antigravity-ning eng katta qulayliklaridan biri — u bitta tor doira bilan cheklanmagan. U har qanday dasturchining ish uslubiga mos tushuvchi 3 xil platformaga ega. Birinchisi — bu Antigravity IDE. Bu VS Code negizida qurilgan, sun'iy intellekt birinchi o'ringa qo'yilgan to'laqonli muhit. Bu yerda siz Tab tugmasi orqali shunchaki bitta so'z emas, butun boshli mantiqiy kod bloklarini (Supercomplete) kiritishingiz mumkin. Ctrl+I bosish orqali esa xohlagan kod blokini o'z joyida refaktoring qilasiz. Ikkinchisi — Antigravity 2.0 Desktop ilovasi. Bu parallel ravishda ishlovchi mustaqil dastur bo'lib, uning markazida Chat Canvas va eng asosiysi — o'ng tarafdagi Auxiliary Pane joylashgan. Bu panelda fonda ishlayotgan Subagentlar, rejalashtirilgan Background vazifalar, interaktiv Artefaktlar va o'zgarayotgan fayllar daraxti real vaqtda aks etadi. Uchinchisi esa — Antigravity CLI yoki 'agy'. Bu terminalni sevadigan, serverlarda yoki engil muhitda ishlovchi dasturchilar uchun mo'ljallangan tezyurar konsol interfeysi. Unda barcha amallarni klaviaturadan qo'lni uzmasdan bajarish mumkin.",
+      "visuals": {
+        "layout": "three-columns",
+        "cards": [
+          { "title": "Antigravity IDE", "desc": "VS Code asosida. Autocomplete, Supercomplete, Ctrl+I Inline Refactoring va CodeLens." },
+          { "title": "Antigravity 2.0 Desktop", "desc": "Chat Canvas, Auxiliary Pane: Subagents, Background Tasks, Artifacts, Terminals." },
+          { "title": "Antigravity CLI (agy)", "desc": "Terminal TUI. Tezyurar, resurs tejovchi, serverlar va avtomatizatsiyalar uchun." }
+        ]
+      }
+    },
+    {
+      "id": "scene_03_superpowers",
+      "title": "Agentic Super-kuchlar: Slash Buyruqlar va Subagentlar",
+      "startTime": "00:04:30",
+      "endTime": "00:07:00",
+      "durationEst": 150,
+      "narration": "Endi Antigravity-ni oddiy AI yordamchilardan bir necha bosh ustun qiluvchi super-kuchlariga to'xtalamiz. Birinchisi — bu '/plan' buyrug'i. Ko'pchilik sun'iy intellektlar berilgan vazifani tushunmasdan turib kodni buzib tashlaydi. Antigravity esa '/plan' orqali avval butun arxitekturani chuqur tahlil qiladi, nimalar o'zgarishini ko'rsatib reja artefaktini tuzadi va faqat siz tasdiqlaganingizdan keyingina kodga teginadi. Ikkinchisi — '/grill-me'. Bu buyruq orqali agent loyihadagi har bir noaniq nuqta bo'yicha sizdan birma-bir intervyu oladi va eng maqbul variantlarni tavsiya qiladi. Uchinchisi — '/goal'. Bu tuni bilan yoki bir necha soat davomida to'xtovsiz, chuqur izlanish va tekshiruv talab qiladigan vazifalar uchun mo'ljallangan avtonom rejim. Va nihoyat — Subagentlar tizimi! Antigravity yagona ipda qotib qolmaydi. U og'ir kod tahlili uchun 'research' subagentini fonda ishga tushirishi, testlar uchun alohida agent ochishi va ular parallel ishlab, natijalarni bosh agentga yetkazib berishi mumkin.",
+      "visuals": {
+        "commands": [
+          { "cmd": "/plan", "detail": "Loyihani xavfsiz rejalashtirish va tasdiqlash" },
+          { "cmd": "/grill-me", "detail": "Arxitekturaviy interaktiv intervyu" },
+          { "cmd": "/goal", "detail": "Avtonom uzoq muddatli maqsadlar" },
+          { "cmd": "/schedule", "detail": "Cron va fondagi taymerli vazifalar" },
+          { "cmd": "Subagents", "detail": "Parallel ishlovchi ixtisoslashgan agentlar to'dasi" }
+        ]
+      }
+    },
+    {
+      "id": "scene_04_customization",
+      "title": "Customization Ekosistemasi: Skills, Rules, MCP va Sidecars",
+      "startTime": "00:07:00",
+      "endTime": "00:09:15",
+      "durationEst": 135,
+      "narration": "Antigravity o'rnatilgan qobiliyatlar bilangina cheklanmaydi. U dunyodagi eng moslashuvchan kengaytirish arxitekturasiga ega. Unda to'rtta asosiy ustun mavjud. Birinchisi — Rules. '.gemini/rules' katalogida yozilgan qoidalar agent uchun buzib bo'lmas qonun hisoblanadi. Masalan, 'Hech qachon ishlab turgan ma'lumotlar bazasini o'chirma' yoki 'Faqat TypeScript ishlatilsin' degan qoidalarni o'rnatasiz. Ikkinchisi — Skills. 'SKILL.md' fayli orqali siz agentga yangi soha bilimlari, qadam-baqadam yo'riqnomalar va yordamchi skriptlarni berasiz. Uchinchisi — Model Context Protocol yoki MCP. Bu ochiq protokol bo'lib, agentni tashqi ma'lumotlar bazalari, GitHub, Chrome brauzeri yoki Cloud resurslariga xavfsiz ulaydi. Va to'rtinchisi — Sidecars! Bu Antigravity ichida ochiladigan interaktiv vizual panellar. Masalan, 3D molekulalarni ko'rish, Android emulyatorini boshqarish yoki Jetpack Compose preview-larini real vaqtda tomosha qilish mumkin.",
+      "visuals": {
+        "grid": [
+          { "name": "Rules (.gemini/rules)", "icon": "shield", "text": "Hech qachon buzilmas loyiha qonunlari va xavfsizlik chegaralari" },
+          { "name": "Skills (SKILL.md)", "icon": "zap", "text": "Yangi bilimlar, maxsus ko'rsatmalar va skriptlar to'plami" },
+          { "name": "MCP (Context Protocol)", "icon": "cpu", "text": "Tashqi API, ma'lumotlar bazasi va servislarga ulanish" },
+          { "name": "Sidecars", "icon": "layout", "text": "3D, Android va UI uchun interaktiv yon darchalar" }
+        ]
+      }
+    },
+    {
+      "id": "scene_05_handson",
+      "title": "JONLI AMALIYOT: Noldan Custom Skill va Plugin Yaratish",
+      "startTime": "00:09:15",
+      "endTime": "00:13:00",
+      "durationEst": 225,
+      "narration": "Keling, endi nazariyadan haqiqiy amaliyotga o'tamiz! Hozir biz siz bilan birgalikda har bir dasturchi jamoasiga zarur bo'lgan 'smart-code-auditor' nomli yangi Custom Skill yaratamiz. Ushbu skill har bir o'zgarishni xavfsizlik, sintaksis va maxfiy API kalitlar qolib ketmaganligi bo'yicha avtomatik tekshiradi. Birinchi qadam: Skill katalogini va 'SKILL.md' faylini yaratamiz. Unda YAML sarlavhasida nom va qisqa ta'rif yoziladi. Shuningdek, agent ushbu qobiliyatni qachon ishlatishi kerakligi aniq ko'rsatiladi. Ikkinchi qadam: 'scripts/audit.py' skriptini yozamiz. Bu skript git o'zgarishlarini skanerlab, xavfli satrlarni aniqlaydi. Uchinchi qadam: Antigravity-da yangi skillni chaqiramiz. Agent o'zi ushbu skillni taniydi, skriptni terminalda xavfsiz ishga tushiradi va bizga to'liq professional xavfsizlik hisobotini taqdim etadi. Mana shu kabi oddiy qadamlar bilan siz Antigravity-ni o'zingizning shaxsiy yoki kompaniyangiz maxsus vositalariga moslab olasiz!",
+      "visuals": {
+        "editor": "VS Code Split View",
+        "steps": [
+          "1. 'smart-code-auditor/SKILL.md' faylini tuzish",
+          "2. 'scripts/audit.py' orqali git diff va tokenlarni tahlil qilish",
+          "3. Antigravity chatida skillni ishlatish va audit hisobotini olish"
+        ]
+      }
+    },
+    {
+      "id": "scene_06_outro",
+      "title": "Xulosa va Keyingi Qadamlar",
+      "startTime": "00:13:00",
+      "endTime": "00:14:00",
+      "durationEst": 60,
+      "narration": "Bugun biz Google Antigravity-ning barcha asosiy imkoniyatlari — uning 3 ta interfeysi, slash buyruqlari, subagentlar jamoasi va shaxsiy Custom Skill yaratish jarayonini batafsil ko'rib chiqdik. Antigravity — bu shunchaki kod yozuvchi yordamchi emas, balki sizning mahsuldorligingizni 10 barobarga oshiruvchi haqiqiy arxitektor-sherikdir. Ushbu videodagi barcha manba kodlari, ssenariy va Custom Skill namunasini quyidagi tavsifda qoldirilgan GitHub havolasidan yuklab olishingiz mumkin. Agar video sizga foydali bo'lgan bo'lsa, layk bosing, do'stlaringiz bilan ulashing va kanalga obuna bo'lishni unutmang. Keyingi darslarda ko'rishguncha, xayr!",
+      "visuals": {
+        "cta": "OBUNA BO'LING VA LAYK BOSING!",
+        "links": ["antigravity.google/docs", "github.com/google-antigravity"],
+        "logoAnimation": "glow"
+      }
+    }
+  ]
+}
