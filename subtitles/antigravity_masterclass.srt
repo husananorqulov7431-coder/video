@@ -1,0 +1,223 @@
+1
+00:00:00,500 --> 00:00:05,000
+Assalomu alaykum! Dasturlash olamida navbatdagi ulkan inqilob sodir bo'ldi.
+
+2
+00:00:05,200 --> 00:00:11,500
+Oxirgi yillarda biz oddiy chat-botlar: ChatGPT, Claude yoki dastlabki yordamchilardan foydalandik.
+
+3
+00:00:11,800 --> 00:00:17,200
+Biroq ularning barchasida bitta kamchilik bor: ular passiv va faqat matn ko'rinishida kod qaytaradi.
+
+4
+00:00:17,500 --> 00:00:23,500
+Siz kodni qo'lda nusxalab, fayllarga qo'yishingiz, testlarni o'zingiz yurgizib xatolarni qidirishingiz kerak edi.
+
+5
+00:00:23,800 --> 00:00:29,000
+Bugun esa bu davr yakunlandi. Yangi Agentic Coding davriga xush kelibsiz!
+
+6
+00:00:29,300 --> 00:00:36,500
+Siz bilan Google DeepMind tomonidan yaratilgan eng ilg'or, to'liq avtonom dasturchi-sherik — Google Antigravity bilan tanishamiz.
+
+7
+00:00:36,800 --> 00:00:43,000
+Antigravity — shunchaki chat emas. U fayllarni mustaqil o'qiydi, tahrirlaydi va loyiha tuzilishini tushunadi.
+
+8
+00:00:43,200 --> 00:00:49,500
+Terminalda buyruqlarni ishga tushiradi, testlarni bajaradi, xatolarni tuzatadi va murakkab loyihalarni rejalashtiradi.
+
+9
+00:00:49,800 --> 00:00:56,000
+Ushbu darslikda Antigravity-ning arxitekturasi, uning 3 ta asosiy interfeysi, slash buyruqlari,
+
+10
+00:00:56,200 --> 00:01:03,000
+subagentlar to'dasi va maxsus kastomizatsiya tizimini qadam-baqadam to'liq ko'rib chiqamiz.
+
+11
+00:01:03,300 --> 00:01:12,000
+Eng qizig'i — video oxirida birgalikda Antigravity uchun noldan o'zimizning shaxsiy Custom Skill-imizni yaratamiz!
+
+12
+00:01:12,500 --> 00:01:17,000
+Keling, Antigravity-ning asosiy interfeyslaridan boshlaymiz.
+
+13
+00:01:30,000 --> 00:01:36,000
+Antigravity-ning eng katta qulayliklaridan biri — u bitta tor doira bilan cheklanmagan.
+
+14
+00:01:36,200 --> 00:01:42,500
+U har qanday dasturchining ish uslubiga mos tushuvchi uchta mustaqil platformaga ega.
+
+15
+00:01:43,000 --> 00:01:48,000
+Birinchisi — bu Antigravity IDE. Bu VS Code negizida qurilgan,
+
+16
+00:01:48,200 --> 00:01:54,500
+sun'iy intellekt birinchi o'ringa qo'yilgan to'laqonli zamonaviy dasturlash muhiti.
+
+17
+00:01:55,000 --> 00:02:01,000
+Bu yerda Tab tugmasi shunchaki so'z emas, butun mantiqiy bloklarni (Supercomplete) kiritadi.
+
+18
+00:02:01,300 --> 00:02:08,000
+Ctrl+I orqali esa xohlagan kod qismini belgilab, to'g'ridan-to'g'ri o'z joyida refaktoring qilasiz.
+
+19
+00:02:08,500 --> 00:02:14,000
+Ikkinchisi — Antigravity 2.0 Desktop ilovasi.
+
+20
+00:02:14,200 --> 00:02:20,500
+Bu mustaqil ish stoli dasturi bo'lib, markazida Chat Canvas joylashgan.
+
+21
+00:02:21,000 --> 00:02:27,500
+Eng asosiysi — o'ng tarafdagi Auxiliary Pane! Bu panelda fondagi Subagentlar,
+
+22
+00:02:27,700 --> 00:02:35,000
+rejalashtirilgan Background vazifalar, interaktiv Artefaktlar va o'zgarayotgan fayllar real vaqtda ko'rinadi.
+
+23
+00:02:35,500 --> 00:02:41,000
+Uchinchisi esa — Antigravity CLI yoki qisqacha 'agy'.
+
+24
+00:02:41,200 --> 00:02:48,000
+Bu terminalni sevadigan, serverlarda yoki engil muhitda ishlovchilar uchun mo'ljallangan tezyurar TUI interfeysi.
+
+25
+00:02:48,500 --> 00:02:56,000
+Unda barcha amallarni klaviaturadan qo'lni uzmasdan, minimal resurs sarflab bajarish mumkin.
+
+26
+00:04:30,000 --> 00:04:36,500
+Endi Antigravity-ni boshqa vositalardan ajratib turuvchi eng kuchli xususiyatlariga to'xtalamiz.
+
+27
+00:04:37,000 --> 00:04:42,500
+Birinchisi — bu '/plan' buyrug'i. Ko'p AI vositalari vazifani tushunmasdan kodni buzib tashlaydi.
+
+28
+00:04:43,000 --> 00:04:50,000
+Antigravity esa '/plan' bilan avval butun arxitekturani tahlil qiladi va reja artefaktini taqdim etadi.
+
+29
+00:04:50,200 --> 00:04:56,000
+Siz rejani tekshirib, ma'qullaganingizdan keyingina u kodga o'zgartirish kiritishni boshlaydi.
+
+30
+00:04:56,500 --> 00:05:03,000
+Ikkinchisi — '/grill-me'. Bu rejimda agent loyihadagi har bir qaror bo'yicha siz bilan intervyu qiladi.
+
+31
+00:05:03,200 --> 00:05:09,000
+Har bir savolga eng to'g'ri yechimlarni tavsiya qilib, noaniqliklarni nolgacha tushiradi.
+
+32
+00:05:09,500 --> 00:05:16,000
+Uchinchisi — '/goal'. Bu tun bo'yi yoki bir necha soat to'xtovsiz ishlaydigan chuqur avtonom rejim.
+
+33
+00:05:16,300 --> 00:05:22,500
+Shuningdek, '/schedule' orqali istalgan vazifani fonda davriy (cron) avtomatlashtirish mumkin.
+
+34
+00:05:23,000 --> 00:05:30,000
+Va nihoyat — Subagentlar tizimi! Antigravity bir vaqtning o'zida bir nechta yordamchi agentlarni boshqaradi.
+
+35
+00:05:30,200 --> 00:05:37,000
+Masalan, 'research' agenti kod bazasini o'rgansa, boshqa agent test yozadi va ular bir-biri bilan ma'lumot almashadi.
+
+36
+00:07:00,000 --> 00:07:06,500
+Antigravity faqat tayyor bilimlar bilan cheklanmaydi. U cheksiz kengaytirish imkoniyatiga ega.
+
+37
+00:07:07,000 --> 00:07:13,000
+Birinchi ustun — bu Rules (.gemini/rules). Bu agent uchun buzib bo'lmas qat'iy qoidalardir.
+
+38
+00:07:13,200 --> 00:07:20,000
+Masalan, 'Baza ma'lumotlarini o'chirma' yoki 'Faqat toza arxitektura tamoyillariga amal qil' deya olasiz.
+
+39
+00:07:20,500 --> 00:07:26,500
+Ikkinchi ustun — Skills. 'SKILL.md' fayli orqali agentga yangi mutaxassislik va skriptlar o'rgatasiz.
+
+40
+00:07:27,000 --> 00:07:33,500
+Uchinchi ustun — Model Context Protocol (MCP). Bu agentni tashqi ma'lumotlar bazasi,
+
+41
+00:07:33,700 --> 00:07:40,000
+GitHub, Chrome DevTools yoki Google Cloud xizmatlariga xavfsiz ulovchi standart ko'prikdir.
+
+42
+00:07:40,500 --> 00:07:47,500
+To'rtinchi ustun — Sidecars! Bular Antigravity-ning yon tomonida ochiluvchi interaktiv vizual oynalar.
+
+43
+00:07:48,000 --> 00:07:55,000
+Masalan, 3D biomolekulalarni ko'rish, Android qurilmasini boshqarish yoki Jetpack Compose preview-lar.
+
+44
+00:09:15,000 --> 00:09:21,500
+Keling, endi eng hayajonli qismga — real hayotiy JONLI AMALIYOTGA o'tamiz!
+
+45
+00:09:22,000 --> 00:09:28,500
+Hozir siz bilan birgalikda 'smart-code-auditor' nomli to'liq ishlaydigan yangi Custom Skill yaratamiz.
+
+46
+00:09:29,000 --> 00:09:36,000
+Bu skill har qanday loyihadagi xavfsizlik zaifliklarini va maxfiy API kalitlar qolib ketganini tekshiradi.
+
+47
+00:09:36,500 --> 00:09:43,000
+1-Qadam: 'smart-code-auditor' papkasini ochib, ichida 'SKILL.md' faylini hosil qilamiz.
+
+48
+00:09:43,300 --> 00:09:50,000
+Undagi YAML frontmatter orqali agentga ushbu skill nomi, ta'rifi va qachon ishlatilishi ko'rsatiladi.
+
+49
+00:09:50,500 --> 00:09:57,500
+2-Qadam: 'scripts/audit.py' yordamchi vositasini yozamiz. U fayllarni tahlil qilib xavfli xatolarni topadi.
+
+50
+00:09:58,000 --> 00:10:05,000
+3-Qadam: Antigravity-da yangi skillni ishga tushiramiz! Agent ushbu yangi qobiliyatni darhol tushunadi,
+
+51
+00:10:05,300 --> 00:10:13,000
+skriptni terminalda ishlatadi va bizga professional formatlangan audit xulosasini beradi.
+
+52
+00:10:13,500 --> 00:10:20,000
+Ko'rib turganingizdek, bir necha daqiqa ichida Antigravity-ga mutlaqo yangi super-qobiliyat qo'shildi!
+
+53
+00:13:00,000 --> 00:13:07,000
+Bugun biz Google Antigravity-ning barcha asosiy sirlari va qudratli imkoniyatlarini o'rgandik.
+
+54
+00:13:07,300 --> 00:13:14,000
+U shunchaki matn generatori emas, balki siz bilan yelkama-yelka kod yozuvchi haqiqiy arxitektor-sherikdir.
+
+55
+00:13:14,300 --> 00:13:21,500
+Barcha ssenariy, SRT subtitrlar, Remotion kodlari va Custom Skill namunasini quyidagi GitHub havolasidan topasiz.
+
+56
+00:13:22,000 --> 00:13:28,000
+Video ma'qul bo'lgan bo'lsa, layk bosing va kanalga obuna bo'ling. Yangi darslarda ko'rishguncha!
