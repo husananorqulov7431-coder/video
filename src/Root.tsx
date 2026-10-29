@@ -1,11 +1,11 @@
 import React from "react";
 import { Composition, Sequence, Audio, staticFile } from "remotion";
-import { Scene01_Intro } from "./scenes/Scene01_Intro.js";
-import { Scene02_Surfaces } from "./scenes/Scene02_Surfaces.js";
-import { Scene03_Superpowers } from "./scenes/Scene03_Superpowers.js";
-import { Scene04_Customization } from "./scenes/Scene04_Customization.js";
-import { Scene05_HandsOn } from "./scenes/Scene05_HandsOn.js";
-import { Scene06_Outro } from "./scenes/Scene06_Outro.js";
+import { Scene01_Intro } from "./scenes/Scene01_Intro";
+import { Scene02_Surfaces } from "./scenes/Scene02_Surfaces";
+import { Scene03_Superpowers } from "./scenes/Scene03_Superpowers";
+import { Scene04_Customization } from "./scenes/Scene04_Customization";
+import { Scene05_HandsOn } from "./scenes/Scene05_HandsOn";
+import { Scene06_Outro } from "./scenes/Scene06_Outro";
 
 // Standart sahnalar davomiyligi (60 FPS bo'yicha)
 // Agar timing_manifest.json bo'lsa, undan olinadi, aks holda standart hisob-kitob
