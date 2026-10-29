@@ -1,7 +1,7 @@
 import React from "react";
-import { ParticleBackground } from "../components/ParticleBackground.js";
-import { SubtitleOverlay } from "../components/SubtitleOverlay.js";
-import { FeatureCard } from "../components/FeatureCard.js";
+import { ParticleBackground } from "../components/ParticleBackground";
+import { SubtitleOverlay } from "../components/SubtitleOverlay";
+import { FeatureCard } from "../components/FeatureCard";
 
 export const Scene04_Customization: React.FC = () => {
   return (
