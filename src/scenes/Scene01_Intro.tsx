@@ -1,7 +1,7 @@
 import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { ParticleBackground } from "../components/ParticleBackground.js";
-import { SubtitleOverlay } from "../components/SubtitleOverlay.js";
+import { ParticleBackground } from "../components/ParticleBackground";
+import { SubtitleOverlay } from "../components/SubtitleOverlay";
 
 export const Scene01_Intro: React.FC = () => {
   const frame = useCurrentFrame();
