@@ -1,7 +1,7 @@
 import React from "react";
-import { ParticleBackground } from "../components/ParticleBackground.js";
-import { SubtitleOverlay } from "../components/SubtitleOverlay.js";
-import { CodeWindow } from "../components/CodeWindow.js";
+import { ParticleBackground } from "../components/ParticleBackground";
+import { SubtitleOverlay } from "../components/SubtitleOverlay";
+import { CodeWindow } from "../components/CodeWindow";
 
 export const Scene05_HandsOn: React.FC = () => {
   const skillCode = `---
