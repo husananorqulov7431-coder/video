@@ -1,7 +1,7 @@
 import React from "react";
-import { ParticleBackground } from "../components/ParticleBackground.js";
-import { SubtitleOverlay } from "../components/SubtitleOverlay.js";
-import { TerminalWindow } from "../components/TerminalWindow.js";
+import { ParticleBackground } from "../components/ParticleBackground";
+import { SubtitleOverlay } from "../components/SubtitleOverlay";
+import { TerminalWindow } from "../components/TerminalWindow";
 
 export const Scene03_Superpowers: React.FC = () => {
   return (
